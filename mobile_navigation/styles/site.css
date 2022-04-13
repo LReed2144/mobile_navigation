@@ -1,0 +1,78 @@
+header nav {
+    List-style: none;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    background-color: #c90016;
+    background-image: url('../images/pancake-menu.svg');
+    background-repeat: no-repeat;
+    min-height: 40px;
+}
+
+
+header nav ul {
+    display: none;
+    list-style: none;
+    
+}
+
+
+header nav.expanded ul{
+    display: block;
+}
+
+header nav.expanded {
+    background-image: url("../images/x-menu.svg");
+}
+
+
+
+ a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em;
+    display: block;
+    font-size: 1.2;
+    
+}
+
+ a:hover, a:active{
+     text-decoration: underline;
+    background-color: #f74d4d;
+    padding: 0.5em;
+    margin: 0em;
+    border: 0.5em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 768px)  {
+    header nav, header nav.expanded {
+        background-image: none;
+        background-color: #c90016;
+        padding: 0.25rem;
+    }
+
+    .nav-item {
+        display: block;
+    }
+   
+   
+    header nav ul, header nav.expanded ul {
+    Display: flex;
+    }
+
+    header nav ul li {
+        flex-basis: 20%;
+        text-align: center;
+    }
+
+    
+}
+
+
